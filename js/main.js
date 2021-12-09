@@ -59,3 +59,30 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#trigger", duration: contai
 $("form.move input[name=duration]:radio").change(function () {
    scene.duration($(this).val());
 });
+
+
+var text = $('.text-overflow'),
+   btn = $('.btn-overflow'),
+   hidebtn = $('.btn-overflow-hide');
+
+
+
+
+btn.click(function (e) {
+   e.stopPropagation();
+   $(this).parent().clone(true).addClass('appended').appendTo($(this).parent());
+
+
+
+});
+
+hidebtn.click(function (e) {
+   e.stopPropagation();
+   $(this).parent().fadeOut().remove();
+
+
+
+});
+
+
+
