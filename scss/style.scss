@@ -12,8 +12,8 @@
       width: 100%;
       height: 100%;
       background: url("../img/line1.png") no-repeat ;
-      top: 30%;
-      left: 70%;
+      top: 40%;
+      left: 60%;
       position: absolute;
       display: inline-block;
       z-index: -1;
@@ -37,7 +37,8 @@
 
 }
 
-.video-container{
+.links-divider:last-child{
+   display: none !important;
 }
 
 .video{
@@ -77,9 +78,13 @@
 
 
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-.sticky-img{
-   display: none; 
-}
+   .sticky-img{
+      display: none; 
+   }
+
+   .wrap{
+      overflow-x: hidden;
+   }
 
    .container{
       padding: 0px 15px;
@@ -170,7 +175,7 @@
 
          .nav-links{
 
-            .nav-link{
+            a{
                color: $heading-color;
                font-size: 18px;
            
@@ -185,11 +190,6 @@
                text-align: center;
                border: solid 0px $heading-color;
 
-
-            
-   
-
-             
             }
          }
 
@@ -298,9 +298,6 @@
 
       padding: 50px 0;
 
-      .about-container{
-         // max-width: 620px;
-      }
 
       .about-title{
          font-family: FreightSans-BoldSC;
@@ -557,6 +554,11 @@
 
          .feature-img{
             margin-bottom: 30px;
+          
+               width: 90px;
+               height: 90px;
+            
+            
          }
 
          .feature-title{
@@ -589,7 +591,7 @@
 
 
          .feature-link{
-            
+            display: none;
             font-family: FreightSans-Bold;
             font-style: normal;
             font-weight: bold;
@@ -663,6 +665,8 @@
                margin-bottom: 3px;
                border-radius: 20px;
                width: 100%;
+               width: 240px;
+               height: 240px;
             }
 
             .contact-title{
@@ -887,17 +891,17 @@
       overflow-x: unset;
    }
    
-      .left-side-container{
-         max-width: 50%;
-      }
-   
+   .left-side-container{
+      max-width: 50%;
+   }
+
       
    
    
-      .sticky-container{
-         position: relative;
-      }
-   
+   .sticky-container{
+      position: relative;
+   }
+
    .sticky-img{
       display: block;
       position: sticky;
@@ -927,26 +931,6 @@
    }
 
 
-   .parent {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(26, 1fr);
-      grid-column-gap: 60px;
-      grid-row-gap: 0px;}
-      
-      .div1 { grid-area: 1 / 1 / 5 / 2;@include decoration-line1();  }
-      .div3 { grid-area: 7 / 1 / 11 / 2;@include decoration-line1();}
-      .div5 { grid-area: 13 / 1 / 17 / 2;@include decoration-line1();}
-      .div7 { grid-area: 19 / 1 / 23 / 2;@include decoration-line1();}
-   
-   
-      .div2 {grid-area: 4 / 2 / 8 / 3;  @include decoration-line2();}
-      .div4 { grid-area: 10 / 2 / 14 / 3;@include decoration-line2(); }
-      .div6 { grid-area: 16 / 2 / 20 / 3;@include decoration-line2(); }
-      .div8 { grid-area: 22 / 2 / 26 / 3;@include decoration-line2(); }
-      
-
-
    .header{
 
       .header-company-links{
@@ -958,21 +942,18 @@
  
          .company-link{
 
-
             font-size: 16px;
             padding: 15px;
-
          }
 
       }
 
       .nav{
         
-
          .logo{
 
             .logo-link{
-         
+      
                padding: 20px 0;
                font-size: 50px;
 
@@ -982,7 +963,7 @@
 
          .nav-links{
 
-            .nav-link{
+            a{
     
                font-size: 18px;
            
@@ -998,18 +979,6 @@
 
    .main{
       min-height:100vh;
-      // background-image: url("../img/perustava_landing.jpg");
-      // background-size: 100% 100%;
-
-      
-      .main-img{
-         // position: absolute;
-         // z-index: -1;
-         // top: -40px;
-     
-      }
-
-  
 
       .main-content{
          margin: 0;
@@ -1046,14 +1015,6 @@
                
                margin-right: 25px;
 
-            }
-
-            .btn-orange{
-      
-            }
-
-            .btn-white{
-   
             }
 
          }
@@ -1124,11 +1085,6 @@
             margin-right: 35px;
 
 
-
-            .benefit-img{
-               
-            }
-
             .benefit-card-title{
 
                font-size: 27px;
@@ -1157,6 +1113,8 @@
    }
 
    .customer-feedback-section{
+      padding-bottom: 150px;
+
       .section-header{
  
       font-size: 54px;
@@ -1266,15 +1224,12 @@
    }
 
    .features-section{
-      padding: 185px 0;
+      padding-bottom: 150px;
 
       .section-title{
 
          font-size: 55px;
          line-height: 77px;
-         /* identical to box height, or 77px */
-
-
 
          margin-bottom: 75px;
 
@@ -1289,6 +1244,8 @@
          justify-content:space-between;
 
          .feature-card{
+            margin-bottom: 0;
+
             width: 35%;
             height: 400px;
             position: relative;
@@ -1315,7 +1272,7 @@
          
          .feature-card:nth-child(even) {
            
-            margin-top: 250px;
+            margin-top: 50px;
             @include decoration-line2();
          
          }
@@ -1325,31 +1282,19 @@
          
          }
 
+         .feature-card:nth-child(2) {
+      
+            margin-top: 250px;
+         
+         }
+
+
 
       }
 
 
-
-
-
-
       .feature-card{
-         padding: 45px 34px;
-         margin-bottom: 0;
-         position: relative;
-
-
-         // width: 330px;
-         
-         background: #fff;
-         
-         box-shadow: 0px 9px 20px 2px rgba(118, 118, 118, 0.1);
-         border-radius: 0px 20px 20px 20px;
-         
-         &:last-child::after{
-            display: none;
-         }
-
+     
 
          .feature-img{
             margin-bottom: 30px;
@@ -1383,13 +1328,11 @@
 
 
          .feature-link{
-            
+            display: block;
+         
             font-size: 20px;
             line-height: 33px;
             /* or 33px */
-
-
-
          }
 
 
@@ -1413,13 +1356,13 @@
       
       }
       .btn-overflow-hide{
-         display: none;
+         display: none !important;
       }
       
       .appended > .btn-overflow-hide{
       
       
-         display: block;
+         display: block !important;
       }
 
 

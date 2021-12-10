@@ -86,3 +86,70 @@ hidebtn.click(function (e) {
 
 
 
+
+
+
+//------------------------
+
+
+// $(document).ready(function () {
+//    // Add smooth scrolling to all links
+//    $("a.nav-link").on('click', function (event) {
+//       event.preventDefault();
+//       // Make sure this.hash has a value before overriding default behavior
+//       if (this.hash !== "") {
+//          // Prevent default anchor click behavior
+
+
+//          // Store hash
+//          var hash = this.hash;
+
+//          let offset = $(hash).offset().top - $(".header").height() + 'px'
+
+//          // Using jQuery's animate() method to add smooth page scroll
+//          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//          $('html, body').animate({
+//             scrollTop: offset
+//          }, 800, function () {
+
+//             console.log(offset)
+//             // Add hash (#) to URL when done scrolling (default click behavior)
+//             window.location.hash = hash;
+
+
+//          });
+//       } // End if
+//    });
+// });
+
+$('a.nav-link').click(function () {
+   $('.menu-btn').click()
+});
+
+
+$(function () {
+   $('a[href*=#]:not([href=#])').click(function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+         && location.hostname == this.hostname) {
+
+         var target = $(this.hash);
+         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+         if (target.length) {
+            $('html,body').animate({
+               scrollTop: target.offset().top - 125 //offsets for fixed header
+            }, 1000);
+            return false;
+         }
+      }
+   });
+   //Executed on page load with URL containing an anchor tag.
+   if ($(location.href.split("#")[1])) {
+      var target = $('#' + location.href.split("#")[1]);
+      if (target.length) {
+         $('html,body').animate({
+            scrollTop: target.offset().top - 120 //offset height of header here too.
+         }, 1000);
+         return false;
+      }
+   }
+});
