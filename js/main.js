@@ -48,7 +48,7 @@ var tween = TweenMax.to(obj, 0.5,
 
 // init controller
 var controller = new ScrollMagic.Controller();
-var containerHeight = $('.sticky-container').innerHeight();
+var containerHeight = $('.features-section').innerHeight() - 400;
 // build scene
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger", duration: containerHeight })
    .setTween(tween)

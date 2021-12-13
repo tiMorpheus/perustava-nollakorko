@@ -78,6 +78,15 @@
 
 
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  
+   .logo-img{
+      width: 130px;
+    position: relative;
+    top: 5px;
+      
+   }
+  
+  
    .sticky-img{
       display: none; 
    }
@@ -88,8 +97,7 @@
 
    .container{
       padding: 0px 15px;
-      max-width: 80%;
-      margin: 0 auto;
+    
    }
 
    .header{
@@ -305,7 +313,7 @@
          font-family: FreightSans-BoldSC;
          font-style: normal;
          font-weight: bold;
-         font-size: 50px;
+         font-size: 40px;
          line-height: 50px;
          /* identical to box height, or 76px */
 
@@ -886,7 +894,11 @@
 
 @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */
 
-
+   .container{
+      padding: 0px 15px;
+      max-width: 80%;
+      margin: 0 auto;
+   }
 
 
 }
@@ -917,6 +929,11 @@
 }
 @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+   .logo-img{
+      width: 100%;
+      
+   }
 
    .wrap{
       overflow-x: unset;
