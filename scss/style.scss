@@ -88,6 +88,8 @@
 
    .container{
       padding: 0px 15px;
+      max-width: 80%;
+      margin: 0 auto;
    }
 
    .header{
@@ -200,7 +202,7 @@
    }
 
    .main{
-      min-height:100vh;
+      // min-height:100vh;
       // background-image: url("../img/perustava_landing.jpg");
       // background-size: 100% 100%;
 
@@ -317,7 +319,7 @@
          font-family: FreightSans;
          font-style: normal;
          font-weight: 500;
-         font-size: 14px;
+         font-size: 20px;
          line-height: 28px;
          /* or 32px */
 
@@ -745,7 +747,7 @@
                font-family: FreightSans-Bold;
                font-style: normal;
                font-weight: bold;
-               font-size: 20px;
+               font-size: 28px;
                line-height: 28px;
                /* identical to box height, or 42px */
 
@@ -755,7 +757,7 @@
                font-family: FreightSans;
                font-style: normal;
                font-weight: 500;
-               font-size: 14px;
+               font-size: 20px;
                line-height: 28px;
                /* identical to box height, or 34px */
 
@@ -770,7 +772,7 @@
             font-family: FreightSans;
             font-style: normal;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 20px;
             line-height: 28px;
             /* or 32px */
 
@@ -882,8 +884,37 @@
 }
 
 
-@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */
+
+
+
+
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+   .benefits-cards-wrap{
+      justify-content: space-between;
+
+      .benefit-card{
+         width: 40%;
+      }
+   }
+
+   .contacts-section{
+      .contacts-card-wrap{
+         flex-direction: row;
+         flex-wrap: wrap;
+
+         .contact-card{
+            width: 40%;
+
+         }
+
+      }
+
+   } 
+
+}
 @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
 
