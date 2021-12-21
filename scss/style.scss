@@ -30,7 +30,7 @@
       height: 100%;
       background: url("../img/line2.png") no-repeat ;
       top: 60%;
-       right: 50%;
+      right: 50%;
       position: absolute;
       display: inline-block;
       z-index: -1;
@@ -239,15 +239,16 @@
 
                text-align: center;
                border-radius: 4px;
-               margin-right: 25px;
+               margin-right: 15px;
                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
 
+               transition: background 1s ease, color 1s ease;
             }
 
             .btn-orange{
                background: $base-color;
                color: #fff;
-               transition: all 1s ease;
+               
 
                &:hover{
                   background: #d24f13;
@@ -258,7 +259,6 @@
                background: #fff;
                color: $base-color;
 
-               transition: all 1s ease;
 
                &:hover{
                   background: #f1eeed;
@@ -790,7 +790,7 @@
          align-items: center;
          flex-direction: column;
 
-         margin-bottom: 15px;
+         // margin-bottom: 15px;
          
          a{
             transition: all 1s ease;
@@ -801,13 +801,13 @@
          }
 
          .law-links{
-            margin-bottom: 10px;
+            margin-bottom: 25px;
 
             .law-link{
                font-family: Libre Franklin, sans-serif;
                font-style: normal;
                font-weight: normal;
-               font-size: 14px;
+               font-size: 17px;
                line-height: 14px;
                /* identical to box height, or 14px */
 
@@ -931,7 +931,7 @@
       img{
          max-width: 600px;
          height: auto;
-         
+         margin-top: 85px;
       }
    }
    
@@ -1549,7 +1549,7 @@
    
          flex-direction: row;
 
-         margin-bottom: 35px;
+         // margin-bottom: 35px;
          
    
          .law-links{
