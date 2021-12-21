@@ -11,21 +11,35 @@ $(function () {
 
 
 // define images
+// var images = [
+//    "./img/animation/1_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/2_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/3_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/4_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/5_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/6_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/7_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/8_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/9_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/10_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/11_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/12_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/13_Perustava_nk_2021_7_12_nelio.jpg",
+//    "./img/animation/14_Perustava_nk_2021_7_12_nelio.jpg",
+// ];
+
 var images = [
-   "./img/animation/1_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/2_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/3_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/4_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/5_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/6_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/7_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/8_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/9_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/10_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/11_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/12_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/13_Perustava_nk_2021_7_12_nelio.jpg",
-   "./img/animation/14_Perustava_nk_2021_7_12_nelio.jpg",
+   "./img/animation/gif/1_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/2_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/3_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/4_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/5_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/6_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/7_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/8_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/9_Perustava_nk_2021_7_12_nelio.gif",
+   "./img/animation/gif/10_Perustava_nk_2021_7_12_nelio.gif"
+ 
 ];
 
 // TweenMax can tween any property of any object. We use this object to cycle through the array
